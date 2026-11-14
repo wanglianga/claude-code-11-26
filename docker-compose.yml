@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: regional-emergency-drug-allocation:demo
+    container_name: emergency-drug-demo
+    ports:
+      - "8080:80"
+    restart: unless-stopped
